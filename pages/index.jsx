@@ -1,14 +1,21 @@
+import Head from 'next/head'
+
 import Title from '../src/components/title/Title'
 import Subtitle from '../src/components/subtitle/Subtitle'
 
 function HomePage () {
   return (
-    <div>
-      <Title>Um titulo</Title>
-      <Subtitle />
-      <Title>Outro titulo</Title>
-      <Subtitle text="Outro paragrafo qualquer"></Subtitle>
-    </div>
+    <>
+      <Head>
+        <title>Minha primeira página em React</title>
+      </Head>
+      <div>
+        <Title>Um titulo</Title>
+        <Subtitle />
+        <Title>Outro titulo</Title>
+        <Subtitle text="Outro paragrafo qualquer"></Subtitle>
+      </div>
+    </>
   )
 }
 
